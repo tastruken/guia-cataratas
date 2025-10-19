@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Interactiva sobre Cataratas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-lg shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-sky-700">👁️ Guía de Cataratas</h1>
+            <div class="hidden md:flex space-x-8">
+                <a href="#entendiendo" class="nav-link text-gray-600 hover:text-sky-600 transition duration-300">Entendiendo</a>
+                <a href="#tipos_catarata" class="nav-link text-gray-600 hover:text-sky-600 transition duration-300">Tipos</a>
+                <a href="#prevencion" class="nav-link text-gray-600 hover:text-sky-600 transition duration-300">Prevención</a>
+                <a href="#tratamiento" class="nav-link text-gray-600 hover:text-sky-600 transition duration-300">Tratamiento</a>
+                <a href="#lentes" class="nav-link text-gray-600 hover:text-sky-600 transition duration-300">Tipos de Lentes</a>
+                <a href="#tecnologia_medica" class="nav-link text-gray-600 hover:text-sky-600 transition duration-300">T. Médica</a>
+                <a href="#contacto" class="nav-link text-gray-600 hover:text-sky-600 transition duration-300">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <select id="mobile-nav" class="border border-gray-300 rounded-md p-2 bg-white text-gray-700">
+                    <option value="#entendiendo">Entendiendo</option>
+                    <option value="#tipos_catarata">Tipos de Catarata</option>
+                    <option value="#prevencion">Prevención</option>
+                    <option value="#tratamiento">Tratamiento</option>
+                    <option value="#lentes">Tipos de Lentes</option>
+                    <option value="#tecnologia_medica">T. Médica</option>
+                    <option value="#contacto">Contacto</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8 md:py-16">
+
+        <section id="entendiendo" class="mb-20 scroll-mt-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-sky-800 mb-4">Entendiendo las Cataratas</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                La catarata es una opacidad del cristalino, la lente natural del ojo, que impide el paso nítido de la luz. Aunque se forman lentamente, la prevención y el conocimiento son claves para mantener una visión clara. Esta sección te ayudará a identificar los síntomas y los factores de riesgo.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-xl border border-sky-100 border-b-4 border-sky-500 hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-bold mb-8 text-sky-700 flex items-center">
+                        <span class="text-3xl mr-3">🚨</span> Síntomas Clave
+                    </h3>
+                    <ul class="divide-y divide-gray-200">
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Visión borrosa o nublada</h4>
+                            <p class="text-base text-gray-600 mt-1">Experimentar la sensación de mirar a través de un vidrio empañado o neblina.</p>
+                        </li>
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Deslumbramiento o Fotofobia</h4>
+                            <p class="text-base text-gray-600 mt-1">Sensibilidad exagerada a la luz, causando malestar ante focos intensos.</p>
+                        </li>
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Halos alrededor de luces</h4>
+                            <p class="text-base text-gray-600 mt-1">Observar aros, destellos o dispersión de luz, especialmente de noche.</p>
+                        </li>
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Cambio en la percepción del color</h4>
+                            <p class="text-base text-gray-600 mt-1">Los tonos se perciben desvanecidos, apagados o con matices amarillentos.</p>
+                        </li>
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Dificultad para ver de noche</h4>
+                            <p class="text-base text-gray-600 mt-1">Reducción significativa de la visión, dificultando la conducción nocturna.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-xl border border-sky-100 border-b-4 border-sky-500 hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-bold mb-8 text-sky-700 flex items-center">
+                        <span class="text-3xl mr-3">⚠️</span> Factores de Riesgo
+                    </h3>
+                    <ul class="divide-y divide-gray-200">
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Edad Avanzada</h4>
+                            <p class="text-base text-gray-600 mt-1">Es el factor principal; la incidencia aumenta significativamente después de los 40 años.</p>
+                        </li>
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Diabetes Mellitus</h4>
+                            <p class="text-base text-gray-600 mt-1">El control inadecuado del azúcar en sangre acelera la aparición de la catarata.</p>
+                        </li>
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Hábitos Tóxicos</h4>
+                            <p class="text-base text-gray-600 mt-1">El tabaquismo (fumar) y el consumo excesivo de bebidas alcohólicas.</p>
+                        </li>
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Exposición Solar (UV)</h4>
+                            <p class="text-base text-gray-600 mt-1">La falta de protección adecuada (gafas con filtro UV) frente a la radiación solar.</p>
+                        </li>
+                        <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Uso de Corticoides</h4>
+                            <p class="text-base text-gray-600 mt-1">Tratamientos prolongados que requieren el uso de ciertos medicamentos esteroides.</p>
+                        </li>
+                         <li class="py-5">
+                            <h4 class="font-bold text-gray-800 text-lg">Traumatismos Oculares</h4>
+                            <p class="text-base text-gray-600 mt-1">Lesiones físicas previas o golpes directos sufridos en el ojo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tipos_catarata" class="mb-20 scroll-mt-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-sky-800 mb-4">Clasificación de las Cataratas</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Las cataratas se clasifican según la parte del cristalino que se ve afectada. Conocer el tipo ayuda a comprender los síntomas específicos y el avance de la condición.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center border-b-4 border-sky-500 hover:shadow-xl hover:scale-[1.01] transition duration-300 ease-in-out cursor-pointer">
+                    <div class="text-5xl mb-4">🟡</div>
+                    <h3 class="text-xl font-bold text-sky-700 mb-2">Catarata Nuclear</h3>
+                    <p class="text-gray-600">Se forma en el centro del cristalino (núcleo). Suele causar un aumento de la miopía y una coloración amarillenta progresiva de la visión.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center border-b-4 border-sky-500 hover:shadow-xl hover:scale-[1.01] transition duration-300 ease-in-out cursor-pointer">
+                    <div class="text-5xl mb-4">⚪</div>
+                    <h3 class="text-xl font-bold text-sky-700 mb-2">Catarata Cortical</h3>
+                    <p class="text-gray-600">Comienza en la periferia del cristalino (corteza) con opacidades blancas en forma de cuña que avanzan hacia el centro, causando deslumbramiento.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center border-b-4 border-sky-500 hover:shadow-xl hover:scale-[1.01] transition duration-300 ease-in-out cursor-pointer">
+                     <div class="text-5xl mb-4">⚫</div>
+                    <h3 class="text-xl font-bold text-sky-700 mb-2">Catarata Subcapsular Posterior</h3>
+                    <p class="text-gray-600">Se desarrolla rápidamente en la parte posterior del cristalino. Afecta severamente la visión de cerca y genera gran sensibilidad a la luz brillante.</p>
+                </div>
+            </div>
+        </section>
+        <section id="prevencion" class="mb-20 scroll-mt-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-sky-800 mb-4">Prevención y Diagnóstico</h2>
+             <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Adoptar hábitos saludables y realizar chequeos regulares son las mejores herramientas para retrasar la aparición de cataratas y detectarlas a tiempo. Aquí te mostramos cómo puedes proteger tu salud visual activamente.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center border-b-4 border-sky-500 hover:shadow-xl hover:scale-[1.01] transition duration-300 ease-in-out cursor-pointer">
+                    <div class="text-5xl mb-4">🕶️</div>
+                    <h3 class="text-xl font-bold text-sky-700 mb-2">Protección Solar</h3>
+                    <p class="text-gray-600">Usa siempre gafas de sol con filtro UV 100% y sombreros de ala ancha para proteger tus ojos de la radiación solar directa.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center border-b-4 border-sky-500 hover:shadow-xl hover:scale-[1.01] transition duration-300 ease-in-out cursor-pointer">
+                    <div class="text-5xl mb-4">🥗</div>
+                    <h3 class="text-xl font-bold text-sky-700 mb-2">Estilo de Vida Saludable</h3>
+                    <p class="text-gray-600">Controla la diabetes, mantén una dieta rica en antioxidantes, evita fumar y modera el consumo de alcohol.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center border-b-4 border-sky-500 hover:shadow-xl hover:scale-[1.01] transition duration-300 ease-in-out cursor-pointer">
+                     <div class="text-5xl mb-4">🗓️</div>
+                    <h3 class="text-xl font-bold text-sky-700 mb-2">Exámenes Regulares</h3>
+                    <p class="text-gray-600">Visita al oftalmólogo periódicamente, sobre todo a partir de los 40 años, para un diagnóstico precoz mediante un examen con dilatación pupilar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tratamiento" class="mb-20 scroll-mt-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-sky-800 mb-4">El Único Tratamiento Efectivo: La Cirugía</h2>
+             <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+               Actualmente, no existen medicamentos o gotas que eliminen las cataratas. La cirugía es el único método para recuperar la visión. Es uno de los procedimientos más seguros y exitosos en la medicina moderna.
+            </p>
+            <div class="bg-gray-50 p-8 rounded-lg shadow-xl">
+                 <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg border border-sky-100 border-b-4 border-sky-500 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <h3 class="text-2xl font-bold mb-4 text-sky-700">¿Cuándo es el momento de operar?</h3>
+                        <p class="text-gray-700">La decisión se toma junto a tu oftalmólogo cuando la catarata afecta significativamente tus actividades diarias como leer, conducir o trabajar, disminuyendo tu calidad de vida.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg border border-sky-100 border-b-4 border-sky-500 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <h3 class="text-2xl font-bold mb-4 text-sky-700">Beneficios Clave de la Cirugía</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-3 mt-3">
+                            <li>Recuperación visual muy rápida.</li>
+                            <li>Procedimiento ambulatorio, seguro y eficaz.</li>
+                            <li>Restauración completa de la claridad y el color.</li>
+                            <li>Mejora drástica de la calidad de vida.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lentes" class="mb-20 scroll-mt-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-sky-800 mb-4">Tipos de Lentes Intraoculares (LIO)</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                La tecnología moderna ofrece diferentes tipos de lentes para reemplazar el cristalino. La elección es crucial y depende de tus necesidades visuales y tu estilo de vida. Utiliza las pestañas a continuación para comparar las opciones y discútelas con tu especialista.
+            </p>
+            <div class="bg-gray-50 rounded-lg shadow-xl p-4 md:p-8">
+                <div class="mb-6 border-b border-gray-200">
+                    <nav class="flex flex-col sm:flex-row -mb-px" aria-label="Tabs">
+                        <button class="tab-btn tab-active group flex-1 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg transition duration-300" data-tab="monofocal">
+                            Monofocal
+                        </button>
+                        <button class="tab-btn group border-transparent flex-1 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500 hover:text-sky-700 hover:border-gray-300 transition duration-300" data-tab="multifocal">
+                            Multifocal / Trifocal
+                        </button>
+                        <button class="tab-btn group border-transparent flex-1 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500 hover:text-sky-700 hover:border-gray-300 transition duration-300" data-tab="torica">
+                            Tórica
+                        </button>
+                    </nav>
+                </div>
+                <div>
+                    <div id="monofocal" class="tab-content bg-white p-6 rounded-lg shadow-md border-b-4 border-sky-500">
+                        <h3 class="text-2xl font-bold text-sky-700 mb-3">LIO Monofocal</h3>
+                        <p class="text-gray-700">Esta lente corrige la visión para una sola distancia, generalmente de lejos. Es la opción estándar y más común. Después de la cirugía, verás claramente los objetos lejanos, pero necesitarás gafas para actividades de cerca como leer o usar el móvil.</p>
+                    </div>
+                    <div id="multifocal" class="tab-content hidden bg-white p-6 rounded-lg shadow-md border-b-4 border-sky-500">
+                        <h3 class="text-2xl font-bold text-sky-700 mb-3">LIO Multifocal / Trifocal</h3>
+                        <p class="text-gray-700">Diseñadas con tecnología avanzada, estas lentes ofrecen una visión clara en múltiples distancias (lejos, intermedio y cerca). Su objetivo es reducir o eliminar por completo la dependencia de las gafas después de la cirugía, ofreciendo una mayor libertad visual.</p>
+                    </div>
+                    <div id="torica" class="tab-content hidden bg-white p-6 rounded-lg shadow-md border-b-4 border-sky-500">
+                        <h3 class="text-2xl font-bold text-sky-700 mb-3">LIO Tórica</h3>
+                        <p class="text-gray-700">Esta es la lente ideal para pacientes que tienen astigmatismo preexistente además de la catarata. La LIO Tórica está diseñada específicamente para corregir el astigmatismo, proporcionando una visión más nítida y clara a una distancia determinada sin necesidad de corrección adicional para ese defecto.</p>
+                    </div>
+                </div>
+                 <div class="mt-8 p-4 bg-sky-50 border-l-4 border-sky-500 rounded-r-lg">
+                    <p class="font-bold text-sky-800">¡Importante! La elección de la lente es una decisión personalizada. Consulta siempre a tu especialista para que te evalúe y te ayude a encontrar la mejor opción para ti.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tecnologia_medica" class="mb-20 scroll-mt-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-sky-800 mb-4">Tecnología Médica: Mención Oftalmología</h2>
+            <p class="text-center text-lg text-gray-600 max-w-4xl mx-auto mb-12">
+                El Tecnólogo Médico con mención en Oftalmología es un profesional clave en el equipo de salud visual. Su rol abarca desde la evaluación diagnóstica hasta el soporte pre y post-quirúrgico, siendo fundamental en el manejo de condiciones como la catarata.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-xl border border-sky-100 border-b-4 border-sky-500 hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-bold mb-6 text-sky-700 flex items-center">
+                        <span class="text-3xl mr-3">🔬</span> Diagnóstico y Equipos
+                    </h3>
+                    <ul class="divide-y divide-gray-200">
+                        <li class="py-4">
+                            <h4 class="font-bold text-gray-800">Evaluación Pre-quirúrgica de Catarata</h4>
+                            <p class="text-sm text-gray-600 mt-1">Realiza exámenes cruciales como la Biometría Ocular para medir el poder del Lente Intraocular (LIO) a implantar.</p>
+                        </li>
+                        <li class="py-4">
+                            <h4 class="font-bold text-gray-800">Manejo de Instrumentos Avanzados</h4>
+                            <p class="text-sm text-gray-600 mt-1">Opera equipos de alta tecnología como la Lámpara de Hendidura, Tonómetro y Topógrafo corneal para un diagnóstico preciso.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-xl border border-sky-100 border-b-4 border-sky-500 hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-bold mb-6 text-sky-700 flex items-center">
+                        <span class="text-3xl mr-3">👩‍⚕️</span> Soporte y Seguimiento
+                    </h3>
+                    <ul class="divide-y divide-gray-200">
+                        <li class="py-4">
+                            <h4 class="font-bold text-gray-800">Evaluación Post-operatoria Inmediata</h4>
+                            <p class="text-sm text-gray-600 mt-1">Realiza controles de agudeza visual y toma de presión intraocular inmediatamente después de la cirugía de catarata.</p>
+                        </li>
+                        <li class="py-4">
+                            <h4 class="font-bold text-gray-800">Educación y Prevención</h4>
+                            <p class="text-sm text-gray-600 mt-1">Instruye al paciente sobre el uso de medicamentos post-operatorios y los hábitos de higiene visual para una recuperación óptima.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 p-4 bg-sky-50 border-l-4 border-sky-500 rounded-r-lg max-w-4xl mx-auto">
+                <p class="font-bold text-sky-800">El Tecnólogo Médico es indispensable en la detección temprana de cataratas y la planificación exitosa de la cirugía, trabajando siempre en conjunto con el Médico Oftalmólogo.</p>
+            </div>
+        </section>
+        <section id="contacto" class="mb-20 text-center scroll-mt-20 fade-in-section">
+             <h2 class="text-3xl md:text-4xl font-bold text-center text-sky-800 mb-4">Recupera la Claridad de tu Mundo</h2>
+             <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                 ¡No dejes que las cataratas te impidan ver la vida con claridad! Pequeños cambios y una consulta a tiempo pueden llevar a grandes resultados. Ponte en contacto con nosotros para una evaluación.
+             </p>
+            <div class="bg-gray-50 w-full max-w-lg mx-auto p-8 rounded-lg shadow-xl border border-gray-200 transform transition duration-300 hover:shadow-2xl hover:border-sky-300 border-b-4 border-sky-500">
+                <h3 class="text-2xl font-bold mb-6 text-sky-700">CEOF</h3>
+                 <div class="space-y-6 text-left">
+                     <p class="flex items-center"><span class="text-2xl mr-4 flex-shrink-0">☎️</span> <strong class="flex-shrink-0 mr-2">Teléfono Citas:</strong> <a href="tel:+56950116105" class="text-sky-600 hover:underline transition duration-300">[+56 9 5011 6105]</a></p>
+                     <p class="flex items-center"><span class="text-2xl mr-4 flex-shrink-0">📍</span> <strong class="flex-shrink-0 mr-2">Dirección:</strong> <span>Luis Valente Rossi con Edmundo Flores</span></p>
+                 </div>
+                 <p class="mt-8 text-lg font-semibold text-sky-800 italic">"Tus ojos reflejan tu salud. ¡Cuídalos cada día!"</p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="bg-white mt-16 border-t">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-500">
+            <p>&copy; 2025 CEOF. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
